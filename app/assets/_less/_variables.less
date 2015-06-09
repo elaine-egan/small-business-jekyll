@@ -1,5 +1,5 @@
 //@fonts: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-
+@import url(http://fonts.googleapis.com/css?family=Adamina|Muli|Cabin|Old+Standard+TT|Istok+Web|Lato|Open+Sans|Lora|Montserrat|Dosis);
 @border-radius-base:        0;
 @border-radius-large:       0;
 @border-radius-small:       0;
@@ -7,25 +7,36 @@
 // Colors
 // You can set colours in hex format - e.g. #121212, or rgb format - e.g. rgb(18,18,18)
 // -----------------------------------------------------------------------------
-@brand-primary:         #0e7488;
+@brand-primary:         #570d42;
 @dark-brand-primary:    darken( @brand-primary, 20% );
 @brand-opaque:          rgba(14, 116, 136, 0.4);
 @brand-tint:            rgb(116,125,125);
-@brand-button:          rgb(200, 34, 34);
-@brand-super-dark:      rgb(34,34,34);
+@brand-button:          #8e2c79;//rgb(200, 34, 34);
+@brand-super-dark:      #570d42;
 @brand-green:           rgb(50, 153, 0);
 @light-blue:            rgb(184, 203, 252);
 @light-grey:            rgb(241, 241, 241);
+@dark-grey: #8c7c7c;
 @malibu-blue:           rgb(66, 88, 175);
 
 @link-color: darken( @light-blue, 30% );
 
 // Element Colours
 // -----------------------------------------------------------------------------
+@main-background: #f7f1f3;
 @phone-button-bg: @brand-button;
-@footer-background: darken( @brand-primary, 15% );//@malibu-blue;
+@footer-background: #ad9a9a;//@malibu-blue;
 @blockquote-bg: @light-grey;
 @blockquote-fg: @brand-super-dark;
+@dark-navbar: @brand-super-dark;
+@heading-color: @dark-grey;
+@main-text-colour: @dark-grey;//lighten( @dark-grey, 5% );
+
+h1, h2, h3, h4, h5 {
+
+  color: darken( @heading-color, 10% );
+
+}
 
 // Fonts
 // -----------------------------------------------------------------------------
@@ -39,13 +50,13 @@
 
 // Set fonts for the site
 // -----------------------------------------------------------------------------
-@font-family-sans-serif:  "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-@font-family-serif:       Lora, Georgia, "Times New Roman", Times, serif;
+@font-family-sans-serif:  Muli, "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+@font-family-serif:       Adamina, Lora, Georgia, "Times New Roman", Times, serif;
 @font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace;
 
 // Set the main font for the site
 // -----------------------------------------------------------------------------
-@font-family-base:        @font-family-serif;
+@font-family-base:        @font-family-sans-serif;
 
 // END EDITS
 //
@@ -81,7 +92,7 @@
 @line-height-computed:    floor(@font-size-base * @line-height-base); // ~20px
 
 //@headings-font-family:    @font-family-base;
-@headings-font-family:    Lato;//@font-family-sans-serif;
+@headings-font-family:    Adamina, Lato;//@font-family-sans-serif;
 @headings-font-weight:    500;
 @headings-line-height:    1.1;
 @headings-color:          inherit;

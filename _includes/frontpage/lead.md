@@ -1,4 +1,4 @@
-##Pass the Test in the Mid-West!
+##Commercial & Domestic Blinds
 
 Here at the Graduate School of Motoring we have been providing first class driving tuition in the Limerick, Clare and Tipperary areas for almost twenty years.  
 

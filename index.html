@@ -3,7 +3,7 @@ title: Home
 layout: frontpage
 group: navigation
 ---
-{% if site.header-option == 1 %}
+{% if site.intro-section == "full-width-1" %}
 <!-- Intro Header -->
   <header class="intro">
     <div class="intro-body">
@@ -22,29 +22,48 @@ group: navigation
     </div>
   </header>
 {% endif %}
-{% if site.header-option == 2 %}
+{% if site.intro-section == "full-width-2" %}
 <div class="cover">
-    <div class="cover-image" style="background-image: url('{{ site.baseurl }}/{{site.alt-first-image}}')"></div>
-    <!--<div class="cover-image" style="background-image: url('{{ site.baseurl }}/{{site.first-image}}')"></div>-->
-    <!--<div class="cover-image" style="background-image: url('{{ site.baseurl }}/{{site.service-1-image}}')"></div>-->
+  <div class="cover-image" style="background-image: url('{{ site.baseurl }}/{{site.alt-first-image}}')"></div>
     <div class="container">
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2">
-                <div class="well text-center opaque">
-                    <h1>{{ site.title }}</h1>
-                    {% markdown frontpage/intro.md %}
-                    {% include general/intro-phone.html %}
-                    <div class="page-scroll">
-                      <a href="#internal-main">
-                        <i class="fa fa-chevron-down"></i>
-                      </a>
-                    </div>
-                </div>
-            </div>
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2">
+        <div class="well text-center opaque">
+          <h1>{{ site.title }}</h1>
+          {% markdown frontpage/intro.md %}
+          {% include general/intro-phone.html %}
+          <div class="page-scroll">
+            <a href="#internal-main">
+              <i class="fa fa-chevron-down"></i>
+            </a>
+          </div>
         </div>
+      </div>
     </div>
+  </div>
 </div>
 {% endif %}
+{% if site.section-1-slider == true %}
+<div class="section section-1" id="internal-main">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-5">
+        {% markdown frontpage/lead.md %}
+      </div>
+      <div class="col-md-6 col-md-offset-1">
+        {% include general/slider.html %}
+        <div class="text-center">
+          <div class="lead topspace">
+            {% markdown frontpage/phone-intro-heading.md %}
+          </div>
+          {% include general/intro-phone.html %}
+        </div>
+      </div>
+    </div>
+    <hr>
+  </div>
+</div>
+{% elsif site.section-1-slider == false %}
 <div class="section section-1" id="internal-main">
   <div class="container">
     <div class="row">
@@ -64,6 +83,7 @@ group: navigation
     <hr>
   </div>
 </div>
+{% endif %}
 <div class="section">
   <div class="container">
     {% include general/services.html %}

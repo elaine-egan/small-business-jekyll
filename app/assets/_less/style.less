@@ -1,18 +1,25 @@
 @import "app/_bower_components/bootstrap/less/bootstrap.less";
 @import "app/_bower_components/font-awesome/less/font-awesome.less";
-@import url(http://fonts.googleapis.com/css?family=Cabin|Old+Standard+TT|Istok+Web|Lato|Open+Sans|Lora|Montserrat|Dosis);
 @import "app/assets/_less/_variables";
 @import "app/assets/_less/_phone";
 @import "app/assets/_less/_headings";
 @import "app/assets/_less/_footer";
 @import "app/assets/_less/_header";
 @import "app/assets/_less/_images";
+@import "app/assets/_less/_carousel";
 
 html,
 body {
-
+  background: @main-background;
   height: 100%;
   line-height: 1.6;
+  color: @main-text-colour;
+
+}
+
+hr {
+
+  border-top: 1px solid @dark-grey;
 
 }
 
@@ -98,7 +105,6 @@ a#go-top {
 
 }
 
-
 .text-primary {
   //color: red;
   //&:hover { color: yellow; }
@@ -127,10 +133,15 @@ blockquote {
   //padding-bottom: 40px;
 }
 
+header a.img-link {
+  display: block;
+  padding-top: 20px;
+}
+
 header .show-image {
-  //width: 372px;
-  background: url(../assets/images/logo.png) no-repeat;
-  //margin: 0 auto;
+  background: url(../assets/images/site-logo.png) no-repeat;
+  height: 150px;
+  margin: 0 auto;
 }
 
 header .hide-text {
@@ -460,7 +471,7 @@ header .hide-text {
   background-color: #ffffff;
 }
 .cover .cover-image {
-  z-index: -1;
+  z-index: 1;
   position: absolute;
   top: 0px;
   width: 100%;
@@ -477,7 +488,10 @@ header .hide-text {
   background-color: rgba(0, 0, 0, 0.6);
   color: #fff;
   padding: 40px;
-  //position: absolute;
+  z-index: 3;
+  position: absolute;
+  left: 0;
+  right: 0;
   //top: 60px;
   //max-width: 600px;
 }

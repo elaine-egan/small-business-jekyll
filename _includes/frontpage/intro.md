@@ -1,1 +1,1 @@
-Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+Quality Made to Measure Shutters & Blinds
