@@ -12,7 +12,7 @@ section-4: Section 4
 # Images
 # ------------------------------------------------------------------------------
 frontpage-lead-image: assets/images/medium-images/rip-l-plates.jpg
-alt-first-image: assets/images/big-images/car-view.jpg
+alt-first-image: assets/images/big-images/main-shutters.jpg
 first-image: assets/images/medium-images/rip-l-plates.jpg
 about-1-image: assets/images/medium-images/l-plate.jpg
 about-2-image: assets/images/medium-images/ambulance.jpg
@@ -20,22 +20,25 @@ about-2-image: assets/images/medium-images/ambulance.jpg
 
 # Services MOVED TO _data/services.yml !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 # ------------------------------------------------------------------------------
-#service-1: Service 1 Title
-#service-2: Service 2 Title
-#service-3: Service 3 Title
 
-#service-1-url: /service-1/
-#service-2-url: /service-2/
-#service-3-url: /service-3/
+# Header Options
+# ------------------------------------------------------------------------------
+# header-option: 1 # fixed header, transparent background, all caps
+#header-option: 2 # fixed header, brand colour background
+header-option: 3 # traditional header, not fixed
+
+header-logo: assets/images/logo.png
 
 # Home Page Layout Options
 # ------------------------------------------------------------------------------
 # Layout of services on the home page: Choose "half", "quarter" or "third"
-service-layout: "third"
+service-layout: "half"
 
 # If you'd like to include the "Team" section on the front page, set this value to true.
 # If you're including team, you can set values in _data/people.json or _data/people.csv
 #team: true
+
+
 
 # Contact Page Layout Options
 # ------------------------------------------------------------------------------

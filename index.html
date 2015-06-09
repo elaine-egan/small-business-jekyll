@@ -3,6 +3,26 @@ title: Home
 layout: frontpage
 group: navigation
 ---
+{% if site.header-option == 1 %}
+<!-- Intro Header -->
+  <header class="intro">
+    <div class="intro-body">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2">
+            <h1 class="brand-heading">{{ site.title }}</h1>
+            {% markdown frontpage/intro.md %}
+            {% include general/intro-phone.html %}
+            <a href="#about" class="btn btn-circle page-scroll">
+              <i class="fa fa-angle-double-down animated"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+{% endif %}
+{% if site.header-option == 2 %}
 <div class="cover">
     <div class="cover-image" style="background-image: url('{{ site.baseurl }}/{{site.alt-first-image}}')"></div>
     <!--<div class="cover-image" style="background-image: url('{{ site.baseurl }}/{{site.first-image}}')"></div>-->
@@ -24,6 +44,7 @@ group: navigation
         </div>
     </div>
 </div>
+{% endif %}
 <div class="section section-1" id="internal-main">
   <div class="container">
     <div class="row">

@@ -7,8 +7,3 @@
   description: "Description of service 2"
   url: "/service-2/"
   image: "assets/images/medium-images/service-2.jpg"
-
-- title: "Service 3"
-  description: "Description of service 3"
-  url: "/service-3/"
-  image: "assets/images/medium-images/service-3.jpg"

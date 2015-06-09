@@ -36,7 +36,7 @@ a#go-top {
 
   color: @brand-primary;
   font-size: 40px;
-  
+
 }
 
 .page-scroll {
@@ -127,6 +127,18 @@ blockquote {
   //padding-bottom: 40px;
 }
 
+header .show-image {
+  //width: 372px;
+  background: url(../assets/images/logo.png) no-repeat;
+  //margin: 0 auto;
+}
+
+header .hide-text {
+  text-indent: 100%; // get out of the window
+  white-space: nowrap; // don't come back in
+  overflow: hidden; //no really, don't come back in
+}
+
 .left-logo {
 
   .navbar-toggle {
@@ -160,7 +172,7 @@ blockquote {
     background: @brand-button;
   }
 
-  background: darken( @brand-primary, 20% );
+  background: @dark-brand-primary;
   color: #fff;
   a {
     color: #fff;
