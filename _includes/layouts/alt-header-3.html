@@ -1,0 +1,24 @@
+<div class="navbar navbar-default navbar-inverse navbar-static-top" role="banner">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-ex-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#"><span>Brand</span></a>
+                </div>
+                <nav class="collapse navbar-collapse" id="navbar-ex-collapse" role="navigation" aria-expanded="false" style="height: 1px;">
+                  <ul class="nav navbar-nav navbar-right">
+                    {% for node in site.data.nav %}
+                    {% if page.url == node.url/ %}
+                      <li class="active"><a href="{{node.url}}" class="active">{{node.title}}</a></li>
+                    {% else %}
+                      <li><a href="{{node.url}}">{{node.title}}</a></li>
+                    {% endif %}
+                  {% endfor %}
+                  </ul>
+                </nav>
+            </div>
+        </div>

@@ -1,0 +1,12 @@
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="{{ site.description }}">
+    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/main.min.css">
+    {% if page.title == "Contact" %}
+    <style>#map-canvas { width: 100%; height: 548px; }</style>
+    <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+    <script>var image = "{{ site.url }}/assets/images/marker.png"</script>
+    {% endif %}
+</head>

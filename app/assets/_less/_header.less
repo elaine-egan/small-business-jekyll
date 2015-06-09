@@ -1,0 +1,75 @@
+.navbar-toggle {
+    //margin-top: -40px;
+  }
+
+.navbar-toggle .icon-bar {
+  display: block;
+  width: 22px;
+  height: 3px;
+  border-radius: 0;
+  background-color: #fff;
+}
+
+.button-label {
+  display: table-cell;
+  vertical-align: middle;
+  font-weight: 700;
+  padding-right: 1px;
+  color: #fff;
+}
+
+.button-burger {
+  display: table-cell;
+  padding: 8px;
+  //border: 1px solid #333;
+}
+
+.navbar-inverse {
+  background-color: @brand-primary;
+  border-color: #080808;
+  border: none;
+  color: #fff;
+  a {
+    color: #fff;
+  }
+}
+
+.alt-frontpage {
+
+  .navbar-inverse {
+
+    background-color: @footer-background;
+
+  }
+
+  .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>.active>a:focus {
+
+  color: #fff;
+  background-color: lighten( @footer-background, 5% );
+
+}
+
+}
+
+.navbar-inverse .navbar-brand {
+  color: #fff;
+}
+
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>.active>a:focus {
+
+  color: #fff;
+  background-color: @footer-background;
+
+}
+
+.navbar-inverse .navbar-nav>li>a {
+
+  color: #fff;
+
+  &:hover {
+
+    color: #c0c0c0;
+
+  }
+
+}

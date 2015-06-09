@@ -1,0 +1,15 @@
+---
+layout: service-page
+group: navigation
+---
+<div class="row">
+  <div class="col-md-6">
+    <header class="post-header">
+      <h1>{{ site.data.services[0].title }}</h1>
+    </header>
+    {% markdown services/service-1.md %}
+  </div>
+  <div class="col-md-5 col-md-offset-1">
+    <img class="img-responsive"src="{{ site.baseurl }}/{{ site.data.services[0].image }}" alt="">
+  </div>
+</div>

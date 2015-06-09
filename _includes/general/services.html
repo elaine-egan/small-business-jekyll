@@ -1,0 +1,35 @@
+<div class="row">
+  <div class="col-md-12">
+    <h2>Services</h2>
+  </div>
+  <div class="col-md-8">
+    <div class="lead">
+      {% markdown services/intro.md %}
+    </div>
+  </div>
+</div>
+<div class="row">
+
+  {% if site.service-layout == "half" %}
+    {% assign colno = 6 %}
+  {% endif %}
+  {% if site.service-layout == "third" %}
+    {% assign colno = 4 %}
+  {% endif %}
+  {% if site.service-layout == "quarter" %}
+    {% assign colno = 3 %}
+  {% endif %}
+  {% for service in site.data.services %}
+
+  <div class="col-md-{{colno}}">
+    <div class="service-intro">
+      <a href="{{ site.baseurl }}{{ service.url }}" class="image-link" title="{{ service.title }}">
+        <img class="img-responsive" src="{{ site.baseurl }}/{{ service.image }}" alt="">
+      </a>
+      <h3>{{ service.title }}</h3>
+      {% markdown frontpage/section-1.md %}
+      <a href="{{ site.baseurl }}{{ service.url }}" class="btn btn-default btn-md">More Info&nbsp;&raquo;</a>
+    </div>
+  </div>
+
+  {% endfor %}

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  {% include layouts/head.html %}
+    <body class="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}"{% if page.title == "Contact" %} data-src="{{ site.baseurl }}/assets/images/marker.js"{% endif %}>
+    {% include layouts/header.html %}
+      <div class="container page-wrapper">
+        <div class="row">
+            <div class="col-md-9">
+                {{ content }}
+            </div>
+        </div><!-- end row -->
+      </div><!-- end container -->
+    {% include layouts/footer.html %}
+    </body>
+</html>

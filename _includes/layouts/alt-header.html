@@ -1,0 +1,66 @@
+<div class="navbar navbar-default navbar-static-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-ex-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                Menu
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/"><h1>Graduate School of Motoring</h1></a>
+        </div>
+        <div class="collapse navbar-collapse" id="navbar-ex-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            {% for node in site.data.nav %}
+            {% if page.url == node.url/ %}
+              <li class="active"><a href="{{node.url}}" class="active">{{node.title}}</a></li>
+            {% else %}
+              <li><a href="{{node.url}}">{{node.title}}</a></li>
+            {% endif %}
+          {% endfor %}
+          </ul>
+        </div>
+    </div>
+</div>
+
+<!--<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <h1 class="text-center">Graduate School of Motoring</h1>
+      <h3 class="text-center">The Company Tagline</h3>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <div class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-ex-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          </button>
+          </div>
+          <div class="collapse navbar-collapse" id="navbar-ex-collapse">
+            <ul class="nav navbar-nav">
+            <li class="active">
+            <a href="#">Home</a>
+            </li>
+            <li>
+            <a href="#">About</a>
+            </li>
+            <li>
+            <a href="#">Services</a>
+            </li>
+            <li>
+            <a href="#">Contact</a>
+            </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>-->

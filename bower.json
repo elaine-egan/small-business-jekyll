@@ -1,0 +1,25 @@
+{
+  "name": "basic-four-page",
+  "version": "1.0.0",
+  "authors": [
+    "David Egan <david@carawebs.com>"
+  ],
+  "description": "Jekyll Website Basic Four Page",
+  "moduleType": [
+    "node"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/_bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.0.0",
+    "jquery": "~2.0.3",
+    "font-awesome": "~4.3.0"
+  }
+}

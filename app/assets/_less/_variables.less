@@ -1,0 +1,86 @@
+//@fonts: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+@border-radius-base:        0;
+@border-radius-large:       0;
+@border-radius-small:       0;
+
+// Colors
+// You can set colours in hex format - e.g. #121212, or rgb format - e.g. rgb(18,18,18)
+// -----------------------------------------------------------------------------
+@brand-primary:         #0e7488;//rgb(0, 52, 102);
+@brand-opaque:          rgba(14, 116, 136, 0.4);
+@brand-tint:            rgb(116,125,125);
+@brand-button:          rgb(200, 34, 34);
+@brand-super-dark:      rgb(34,34,34);
+@brand-green:           rgb(50, 153, 0);
+@light-blue:            rgb(184, 203, 252);
+@light-grey:            rgb(241, 241, 241);
+@malibu-blue:           rgb(66, 88, 175);
+
+@link-color: darken( @light-blue, 30% );
+
+// Element Colours
+// -----------------------------------------------------------------------------
+@phone-button-bg: @brand-button;
+@footer-background: darken( @brand-primary, 15% );//@malibu-blue;
+@blockquote-bg: @light-grey;
+@blockquote-fg: @brand-super-dark;
+
+// Fonts
+// -----------------------------------------------------------------------------
+@font-size-base: 16px;
+@vertical-padding: 30px;
+@vertical-margin: 30px;
+
+// Import Google Fonts: Only include the ones you need
+// -----------------------------------------------------------------------------
+@import url(http://fonts.googleapis.com/css?family=Cabin|Old+Standard+TT|Istok+Web|Lato|Open+Sans|Lora|Montserrat|Dosis);
+
+// Set fonts for the site
+// -----------------------------------------------------------------------------
+@font-family-sans-serif:  "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+@font-family-serif:       Lora, Georgia, "Times New Roman", Times, serif;
+@font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace;
+
+// Set the main font for the site
+// -----------------------------------------------------------------------------
+@font-family-base:        @font-family-serif;
+
+// END EDITS
+//
+//
+// Don't edit below this line unless you know what you're doing!
+// -----------------------------------------------------------------------------
+// -----------------------------------------------------------------------------
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+//
+// You are entering the FORBIDDEN ZONE
+//
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+// -----------------------------------------------------------------------------
+// -----------------------------------------------------------------------------
+
+// Typography
+// -----------------------------------------------------------------------------
+
+@line-height-large: 1.33;
+@line-height-small: 1.5;
+
+@font-size-large:         ceil(@font-size-base * 1.25); // ~18px
+@font-size-small:         ceil(@font-size-base * 0.85); // ~12px
+
+@font-size-h1:            floor(@font-size-base * 2.6); // ~36px
+@font-size-h2:            floor(@font-size-base * 2.15); // ~30px
+@font-size-h3:            ceil(@font-size-base * 1.7); // ~24px
+@font-size-h4:            ceil(@font-size-base * 1.25); // ~18px
+@font-size-h5:            @font-size-base;
+@font-size-h6:            ceil(@font-size-base * 0.85); // ~12px
+
+@line-height-base:        1.428571429; // 20/14
+@line-height-computed:    floor(@font-size-base * @line-height-base); // ~20px
+
+//@headings-font-family:    @font-family-base;
+@headings-font-family:    Lato;//@font-family-sans-serif;
+@headings-font-weight:    500;
+@headings-line-height:    1.1;
+@headings-color:          inherit;

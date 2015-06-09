@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+
+  {% include layouts/head.html %}
+
+    <body class="main{% if page.title %} {{ page.title }}{% else %}{{ site.title }}{% endif %}">
+
+    {% include layouts/header.html %}
+
+    {{ content }}
+
+    {% include layouts/footer.html %}
+
+    </body>
+
+</html>

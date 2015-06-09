@@ -1,0 +1,82 @@
+<footer class="section section-primary footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6">
+        <div itemscope itemtype="http://schema.org/LocalBusiness">
+          <h3><span itemprop="name">{{site.business-name}}</span></h3>
+          <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+           {% if site.address-line-1 != nil %}<span itemprop="streetAddress">{{site.address-line-1}}</span><br/>{% endif %}
+           {% if site.address-line-2 != nil %}<span itemprop="streetAddress">{{site.address-line-2}}</span><br/>{% endif %}
+           {% if site.address-town != nil %}<span itemprop="addressLocality">{{site.address-town}}</span><br/>{% endif %}
+           {% if site.address-county != nil %}<span itemprop="addressLocality">{{site.address-county}}</span><br/>{% endif %}
+           {% if site.address-country != nil %}<span itemprop="addressCountry">{{site.address-country}}</span><br/>{% endif %}
+           <!--<span itemprop="postalCode"></span> this won't display, but coming soon in Ireland! -->
+          </div>
+          {% if site.VATNo != nil %}Registered VAT No:&nbsp;{{site.VATNo}}{% endif %}
+          {% if site.CoNo != nil %}<br/>Company No:&nbsp;{{site.CoNo}}{% endif %}
+          {% if site.additionalValue != nil %}<br/>{{ site.additionalKey }}: {{ site.additionalValue }}{% endif %}
+          <span itemprop="geo" itemscope itemtype="http://schema.org/GeoCoordinates">
+            <meta itemprop="latitude" content="52.892491" />
+            <meta itemprop="longitude" content="-8.867443" />
+          </span>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="row">
+          <div class="col-md-12">
+            <h2 class="text-right hidden-xs">Get in Touch</h2>
+            <h2 class="text-left hidden-lg hidden-md hidden-sm">Get in Touch</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 hidden-lg hidden-md hidden-sm text-left">
+            {% if site.email != nil %}
+              <span itemprop="email">
+                <a class="social-icons" href="mailto:{{ site.email }}" title="Email us"><i class="fa fa-3x fa-fw fa-envelope"></i></a>
+              </span>
+            {% endif %}
+            {% if site.twitter != nil %}
+              <a class="social-icons" href="{{ site.twitter }}" title="Follow us on Twitter"><i class="fa fa-3x fa-fw fa-twitter"></i></a>
+            {% endif %}
+            {% if site.facebook != nil %}
+              <a class="social-icons" href="{{ site.facebook }}" title="Find us on Facebook"><i class="fa fa-3x fa-fw fa-facebook"></i></a>
+            {% endif %}
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 hidden-xs text-right">
+            {% if site.email != nil %}
+              <span itemprop="email">
+                <a class="social-icons" href="mailto:{{ site.email }}" title="Email us"><i class="fa fa-3x fa-fw fa-envelope"></i></a>
+              </span>
+            {% endif %}
+            {% if site.twitter != nil %}
+              <a class="social-icons" href="{{ site.twitter }}" title="Follow us on Twitter"><i class="fa fa-3x fa-fw fa-twitter"></i></a>
+            {% endif %}
+            {% if site.facebook != nil %}
+              <a class="social-icons" href="{{ site.facebook }}" title="Find us on Facebook"><i class="fa fa-3x fa-fw fa-facebook"></i></a>
+            {% endif %}
+          </div>
+        </div>
+        <div class="pull-right-sm">
+          {% include general/intro-phone.html %}
+        </div>
+        <div class="text-center">
+          <a href="#" id="go-top" title="Back to top of this page">
+            <i class="fa fa-chevron-up"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+  <script src="{{ site.baseurl }}/assets/js/jquery.min.js"></script>
+  <script src="{{ site.baseurl }}/assets/js/scripts.min.js"></script>
+  {% if page.title == "Contact" %}
+  <script src="{{ site.baseurl }}/assets/js/map-control.js"></script>
+  {% endif %}
+
+  <script src="{{ site.baseurl }}/assets/js/grayscale.js"></script>
+
+  <script src="http://localhost:35729/livereload.js"></script>
+</footer>

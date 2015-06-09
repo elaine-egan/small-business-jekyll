@@ -1,0 +1,131 @@
+#
+# Edit these settings
+# ------------------------------------------------------------------------------
+
+# Section Headings for the page and Navbar
+#-------------------------------------------------------------------------------
+section-1: Section 1
+section-2: Section 2
+section-3: Section 3
+section-4: Section 4
+
+# Images
+# ------------------------------------------------------------------------------
+frontpage-lead-image: assets/images/medium-images/rip-l-plates.jpg
+alt-first-image: assets/images/big-images/car-view.jpg
+first-image: assets/images/medium-images/rip-l-plates.jpg
+about-1-image: assets/images/medium-images/l-plate.jpg
+about-2-image: assets/images/medium-images/ambulance.jpg
+#about-3-image: assets/images/medium-images/trailer.jpg
+
+# Services MOVED TO _data/services.yml !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+# ------------------------------------------------------------------------------
+#service-1: Service 1 Title
+#service-2: Service 2 Title
+#service-3: Service 3 Title
+
+#service-1-url: /service-1/
+#service-2-url: /service-2/
+#service-3-url: /service-3/
+
+# Home Page Layout Options
+# ------------------------------------------------------------------------------
+# Layout of services on the home page: Choose "half", "quarter" or "third"
+service-layout: "third"
+
+# If you'd like to include the "Team" section on the front page, set this value to true.
+# If you're including team, you can set values in _data/people.json or _data/people.csv
+#team: true
+
+# Contact Page Layout Options
+# ------------------------------------------------------------------------------
+# Choose between "table" and "cards"
+contact-layout: "cards"
+
+# General Site settings
+# ------------------------------------------------------------------------------
+title: Site Title
+name: Business Name
+tagline: This is a really awesome tagline for the business
+
+# Email - leave blank if required
+email: david@carawebs.com
+
+# Facebook link
+facebook: https://www.facebook.com/
+
+# Twitter Link
+twitter: https://twitter.com
+
+# Number to display - shown on the button
+phone: 087 123 4567
+
+# Number to call - used for a link, use format +35361... no spaces
+phonenumber: +353871234567
+
+# Short site description
+description: "Short And Simple Site Description"
+
+# Info for the Address Block - leave any variable blank and it won't be added
+# ------------------------------------------------------------------------------
+# Business Name
+business-name: Business Name
+# Address Line 1:
+address-line-1: Address 1
+# Address Line 2:
+#address-line-2:
+# Address Town:
+address-town: Town
+# Address County:
+address-county: Co. County
+# Address Country:
+address-country: Ireland
+# VAT Number:
+VATNo:
+# Company Number
+CoNo: 98765
+# Additional Number - set the name, then the number
+#additionalKey: RDI Number
+#additionalValue: 123
+
+# Personnel Information
+# ------------------------------------------------------------------------------
+person1: Fred Bloggs
+person2: Jane Doe
+person3: John Doe
+
+# EDITORS: DO NOT EDIT BELOW THIS LINE
+# DEV ONLY!!!
+# ------------------------------------------------------------------------------
+# ##############################################################################
+#baseurl: "http://localhost:9000/"
+baseurl: "/graduate"
+
+# For staging site
+url: "http://carawebstest.com/graduate"
+exclude: [node_modules, assets/original-images, Gruntfile.js, HINTGruntfile.js, bower.json, package.json, readme.md]
+# Build settings
+markdown: kramdown
+#include: [bower_components/font-awesome/fonts]
+permalink: pretty
+version: 1
+image:
+  source: assets
+  output: generated
+  presets:
+    users:
+      attr:
+        class: img-responsive
+        itemprop: image
+      width: 350
+    half:
+      width: 500
+      height: 500
+
+navigable-pages:
+  - title: Home
+    url: /
+  - title: Test
+    url: /test/
+  - title: Home 2
+    url: /home-2/

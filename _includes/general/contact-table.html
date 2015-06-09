@@ -1,0 +1,46 @@
+<h2>Our team</h2>
+{% if site.contact-layout == "cards" %}
+  <div class="row">
+    {% for person in site.data.people %}
+      <div class="col-md-6">
+        <div class="thumbnail">
+          <h3>{{ person.first-name }}&nbsp;{{ person.second-name }}</h3>
+          <h4>{{ person.title }}</h4>
+          {{ person.description}}<br />
+          {% if person.phone != nil %}
+            Phone: {{ person.phone}}
+          {% endif %}
+          {% if person.email != nil %}
+            Phone: {{ person.email}}
+          {% endif %}
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+{% endif %}
+{% if site.contact-layout == "table" %}
+<table class="table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Job Title</th>
+      <th>Phone</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for person in site.data.people %}
+      <tr>
+        <td>{{ person.first-name }}&nbsp;{{ person.second-name }}</td>
+        <td>{{ person.title }}</td>
+        <td>
+          {% if person.phone != nil %}
+            {{ person.phone}}
+            {% else %}
+            "-"
+          {% endif %}
+        </td>
+      </tr>
+    {% endfor %}
+  </tbody>
+</table>
+{% endif %}

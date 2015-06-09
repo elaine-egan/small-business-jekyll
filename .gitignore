@@ -1,0 +1,6 @@
+node_modules
+app/_bower_components
+assets/images/*
+_site/assets/images/*
+Gruntfile.js
+assets/original-images/*

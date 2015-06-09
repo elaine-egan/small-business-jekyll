@@ -1,0 +1,25 @@
+---
+title: services
+layout: default
+group: navigation
+---
+<div class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h1>Services</h1>
+      </div>
+      <div class="col-md-8">
+        <div class="lead">
+          {% markdown services/intro.md %}
+        </div>
+        <div class="services-body">
+          {% markdown services/body.md %}
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      {% include general/services.html %}
+    </div>
+  </div>
+</div>

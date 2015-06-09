@@ -1,0 +1,21 @@
+- title: "Home"
+  url: "/"
+
+- title: "About"
+  url: "/about/"
+
+- title: "Services"
+  url: "/services/"
+  subcategories:
+    - subtitle: "Service-1"
+      subhref: "/service-1/"
+    - subtitle: "Service 2"
+      subhref: "/service-2/"
+    - subtitle: "Service-3"
+      subhref: "/service-3/"
+
+- title: "Contact"
+  url: "/contact/"
+
+- title: "Alt Home"
+  url: "/alt-home/"
