@@ -46,15 +46,6 @@ module.exports = function(grunt) {
     },
 
     less: {
-
-      /*compress: false,
-          // LESS source map
-          // To enable, set sourceMap to true and update sourceMapRootpath based on your install
-          sourceMap: true,
-          sourceMapFilename: 'assets/css/main.css.map',
-          sourceMapRootpath: '/app/themes/roots/'*/
-
-
       development: {
         options: {
           compress: true,
@@ -74,7 +65,6 @@ module.exports = function(grunt) {
     copy: {
       css : {
         files: {
-          //'_site/css/main.min.css': 'app/assets/_less/main.min.css'
           'css/main.min.css': 'app/assets/_less/main.min.css'
         }
       },
@@ -101,7 +91,7 @@ module.exports = function(grunt) {
       },
 
       deploy: {
-        command: 'rsync --progress -a -v -rz --checksum --delete -e "ssh -p 25" _site/ username@123.456.789.123:/var/www/domain.com/public_html/subdir'
+        command: 'rsync --progress -a -v -rz --checksum --delete -e "ssh -p 2540" _site/ username@123.456.789.012:/path/to/remote'
       }
 
     },
@@ -156,8 +146,9 @@ module.exports = function(grunt) {
   grunt.registerTask('lessCopy', ['less:development', 'copy:css']);
 
   grunt.registerTask('server', [
-    'shell:jekyllDev',
+    //'shell:jekyllDev',
     'less:development',
+    'shell:jekyllDev',
     'uglify',
     'copy:css',
     'copy:fonts',

@@ -1,8 +1,4 @@
-#
-# Edit these settings
-# ------------------------------------------------------------------------------
-
-# Section Headings for the page and Navbar
+# Section Headings for the Front Page and Navbar
 #-------------------------------------------------------------------------------
 section-1: Section 1
 section-2: Section 2
@@ -18,16 +14,14 @@ about-1-image: assets/images/medium-images/l-plate.jpg
 about-2-image: assets/images/medium-images/ambulance.jpg
 #about-3-image: assets/images/medium-images/trailer.jpg
 
-# Services MOVED TO _data/services.yml !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-# ------------------------------------------------------------------------------
-
 # Header Options
 # ------------------------------------------------------------------------------
 # header-option: 1 # fixed header, transparent background, all caps, full-width image, centred text
 header-option: 2 # fixed header, brand colour background, full-width image with centred text box
 #header-option: 3 # traditional header, not fixed, logo location: assets/images/site-logo.png
-#
 
+# Front Page Intro Option
+# ------------------------------------------------------------------------------
 intro-section: "full-width-2"
 
 header-logo: assets/images/logo.png
@@ -43,8 +37,6 @@ section-1-slider: true
 # If you're including team, you can set values in _data/people.json or _data/people.csv
 #team: true
 
-
-
 # Contact Page Layout Options
 # ------------------------------------------------------------------------------
 # Choose between "table" and "cards"
@@ -52,12 +44,12 @@ contact-layout: "cards"
 
 # General Site settings
 # ------------------------------------------------------------------------------
-title: Irish Blinds
-name: Irish Blinds
+title: The Title
+name: Acme Ltd
 tagline: This is a really awesome tagline for the business
 call-to-action: Contact Us Today # this will be used to introduce buttons
 
-# Email - leave blank if required
+# Email - leave blank if not required
 email: david@carawebs.com
 
 # Facebook link
@@ -78,7 +70,7 @@ description: "Short And Simple Site Description"
 # Info for the Address Block - leave any variable blank and it won't be added
 # ------------------------------------------------------------------------------
 # Business Name
-business-name: Irish Blinds
+business-name: Acme Ltd
 # Address Line 1:
 address-line-1: Address 1
 # Address Line 2:
@@ -99,42 +91,21 @@ CoNo: 98765
 
 # Personnel Information
 # ------------------------------------------------------------------------------
-person1: Fred Bloggs
-person2: Jane Doe
-person3: John Doe
+# This is held in _data/people.json
 
 # EDITORS: DO NOT EDIT BELOW THIS LINE
 # DEV ONLY!!!
 # ------------------------------------------------------------------------------
-# ##############################################################################
 #baseurl: "http://localhost:9000/"
-baseurl: "/graduate"
+baseurl: "/sitename"
 
 # For staging site
-url: "http://carawebstest.com/graduate"
+url: "http://yourdomain.com/sitename"
 exclude: [node_modules, assets/original-images, Gruntfile.js, HINTGruntfile.js, bower.json, package.json, readme.md]
+
 # Build settings
 markdown: kramdown
+
 #include: [bower_components/font-awesome/fonts]
 permalink: pretty
 version: 1
-image:
-  source: assets
-  output: generated
-  presets:
-    users:
-      attr:
-        class: img-responsive
-        itemprop: image
-      width: 350
-    half:
-      width: 500
-      height: 500
-
-navigable-pages:
-  - title: Home
-    url: /
-  - title: Test
-    url: /test/
-  - title: Home 2
-    url: /home-2/
