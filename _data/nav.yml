@@ -11,8 +11,6 @@
       subhref: "/service-1/"
     - subtitle: "Service 2"
       subhref: "/service-2/"
-    - subtitle: "Service-3"
-      subhref: "/service-3/"
 
 - title: "Contact"
   url: "/contact/"

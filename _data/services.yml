@@ -1,9 +1,9 @@
 - title: "Domestic Blinds & Shutters"
-  description: "Description of service 1"
+  description: "Short description of service 1"
   url: "/service-1/"
   image: "assets/images/medium-images/service-1.jpg"
 
 - title: "Commercial Blinds & Shutters"
-  description: "Description of service 2"
+  description: "Short description of service 2"
   url: "/service-2/"
   image: "assets/images/medium-images/service-2.jpg"

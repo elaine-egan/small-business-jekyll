@@ -7,12 +7,17 @@ section-4: Section 4
 
 # Images
 # ------------------------------------------------------------------------------
-frontpage-lead-image: assets/images/medium-images/rip-l-plates.jpg
-alt-first-image: assets/images/big-images/main-shutters.jpg
-first-image: assets/images/medium-images/rip-l-plates.jpg
-about-1-image: assets/images/medium-images/l-plate.jpg
-about-2-image: assets/images/medium-images/ambulance.jpg
-#about-3-image: assets/images/medium-images/trailer.jpg
+# Used for a full-width background image (roughly 2000 x 1333 pixels) on front page
+frontpage-lead-image: assets/images/large-images/main-bg.jpg
+
+#
+first-image: assets/images/medium-images/front-1.jpg
+
+#
+about-1-image: assets/images/medium-images/about-1.jpg
+
+#
+about-2-image: assets/images/medium-images/about-2.jpg
 
 # Header Options
 # ------------------------------------------------------------------------------
@@ -28,14 +33,16 @@ header-logo: assets/images/logo.png
 
 # Home Page Layout Options
 # ------------------------------------------------------------------------------
+#
 # Layout of services on the home page: Choose "half", "quarter" or "third"
 service-layout: "half"
 
-section-1-slider: true
+# Add a slider to the first section
+section-1-slider: false
 
 # If you'd like to include the "Team" section on the front page, set this value to true.
 # If you're including team, you can set values in _data/people.json or _data/people.csv
-#team: true
+team: false
 
 # Contact Page Layout Options
 # ------------------------------------------------------------------------------
