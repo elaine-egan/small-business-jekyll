@@ -27,7 +27,7 @@ header-option: 2 # fixed header, brand colour background, full-width image with 
 
 # Front Page Intro Option
 # ------------------------------------------------------------------------------
-intro-section: "full-width-2"
+intro-section: "full-width-1"
 
 header-logo: assets/images/logo.png
 
@@ -43,6 +43,10 @@ section-1-slider: false
 # If you'd like to include the "Team" section on the front page, set this value to true.
 # If you're including team, you can set values in _data/people.json or _data/people.csv
 team: false
+
+# If you'd like to include the "testimonials" section on the front page, set this value to true.
+# If you're including testimonials, you can set values in _data/testimonials.json or _data/testimonials.csv
+testimonials: true
 
 # Contact Page Layout Options
 # ------------------------------------------------------------------------------

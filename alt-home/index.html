@@ -54,41 +54,15 @@ group: navigation
         </div>
     </div>
 </div>
+{% if site.testimonials == true %}
 <div class="section-3 section">
     <div class="container">
         <div class="row">
-          <div class="col-md-12 text-center">
-              <h2 class="text-center">What Our Clients Say</h2>
-          </div>
-            <div class="col-md-6">
-              <blockquote>
-                {% markdown frontpage/testimonial-content-1.md %}
-                <footer>
-                  {% markdown frontpage/testimonial-person-1.md %}
-                </footer>
-              </blockquote>
-            </div>
-            <div class="col-md-6">
-                <blockquote>
-                    <p>Irene is the best ever!</p>
-                    <footer>Someone famous</footer>
-                </blockquote>
-            </div>
-            <div class="col-md-6">
-                <blockquote>
-                    <p>Irene is the best ever!</p>
-                    <footer>Someone famous</footer>
-                </blockquote>
-            </div>
-            <div class="col-md-6">
-                <blockquote>
-                    <p>Mike is fantastic!</p>
-                    <footer>Someone famous</footer>
-                </blockquote>
-            </div>
+          {% include general/testimonials.html %}
         </div>
     </div>
 </div>
+{% endif %}
 <div class="section">
     <div class="container">
         <div class="row">
