@@ -1,11 +1,13 @@
 ---
 layout: post
-title:  "Responsive Images in a Jekyll post"
-date:   2014-06-26 12:54:44
+title: Responsive Images in a Jekyll post
+date: {}
 categories: jekyll update
+published: true
 ---
 
-How to add a responsive image to a Jekyll post:
+
+This is an edit...How to add a responsive image to a Jekyll post:
 
 Create a folder called assets in the root directory of your project, into which any images, downloads or any other assets are placed. They can then be linked to in the post.
 
